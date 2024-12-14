@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GalleryLoop</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="slider-container">
+    <div class="slider">
+      <!-- Image Slides -->
+      <div class="slide" style="background-image: url('./1.jpeg');">
+        <div class="caption">Artwork 1</div>
+      </div>
+      <div class="slide" style="background-image: url('./2.jpeg');">
+        <div class="caption">Artwork 2</div>
+      </div>
+      <div class="slide" style="background-image: url('./3.jpeg');">
+        <div class="caption">Artwork 3</div>
+      </div>
+    </div>
+
+    <!-- Navigation Arrows -->
+    <span class="arrow left" onclick="changeSlide(-1)">&#10094;</span>
+    <span class="arrow right" onclick="changeSlide(1)">&#10095;</span>
+
+    <!-- Pagination Dots -->
+    <div class="dots">
+      <span class="dot" onclick="currentSlide(0)"></span>
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
